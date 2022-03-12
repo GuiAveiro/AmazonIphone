@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Amazon</title>
+</head>
+
+<body>
+
+    <div class="Container">
+        <div class="Superior">
+            <img class="logo" src="./img/logoamazon.jpg" alt="logoprincipal">
+
+            <nav>
+                <ul id="menu-list">
+                    <li class="nav-li"><a id="nav-link">Produtos</a></li>
+                    <li class="nav-li"><a id="nav-link">Carrinho</a></li>
+                    <li class="nav-li"><a id="nav-link">Contatos</a></li>
+                    <li class="nav-li"><a id="nav-link">Conta</a></li>
+                    <li class="nav-li"><a id="nav-link">Suporte</a></li>
+
+                </ul>
+
+            </nav>
+            <img src="./img/logomenu.png" alt="menu" class="menu-icon" onclick="showMenu()">
+        </div>
+        <div class="row">
+            <div class="cel-meio">
+                <img class="trocaImg" src="./img/iphone13.webp" alt="iphone">
+                <h4>Cores</h4>
+                <button class="img1"><img src="./img/cor 1.webp" alt="cor"></button>
+                <button class="img2"><img src="./img/cor 2.webp" alt="cor2"></button>
+                <button class="img3"><img src="./img/cor 3.webp" alt="cor3"></button>
+            </div>
+            <div class="meio-valor">
+                <p>Novo | 232 vendidos</p>
+                <h1>Apple iPhone 13 Pro Max(128GB)</h1>
+                <h2>R$9.219</h2>
+                <h3>em 12x R$768,00 sem juros</h3>
+                <button>128GB</button>
+                <button>256GB</button>
+                <button>512GB</button>
+            </div>
+            <div class="buy">
+                <div class="itensbuy">
+                    <h5>Estoque disponível</h5>
+                    <button id="buy-now">Comprar Agora</button>
+                    <button id="img"><img src="./img/addtocart.jpg" alt="carrinho"> Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="finallogo">
+            <img src="./img/logofinalamazon.webp" alt="logofinal">
+        </div>
+
+
+    </div>
+
+</body>
+<script>
+    const menuList = document.getElementById("menu-list")
+    menuList.style.maxHeight = "0px"
+
+    function showMenu() {
+        if (menuList.style.maxHeight == "0px") {
+            menuList.style.maxHeight = "120px"
+
+        } else {
+            menuList.style.maxHeight = "0px"
+        }
+    }
+</script>
+
+</html>
